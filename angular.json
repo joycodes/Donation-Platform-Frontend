@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "Donation-Platform"
+  "cli": {
+    "analytics": "8a813c62-fbf0-43b0-a8be-32a81877fee5"
+  }
 }
