@@ -3,16 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaymentComponent } from './payment/payment.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PaymentComponent } from './payment/payment.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaymentComponent
+    PaymentComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, FormsModule,ReactiveFormsModule, // <<<< And here
     AppRoutingModule,
     HttpClientModule
   ],

@@ -1,1 +1,89 @@
-<p>payment works!</p>
+<div class="container h01">
+    <h5 class="pb-4 text-center give">
+      Donate to {{ charity?.charity.user_name }}
+    </h5>
+  <hr>
+    <div class="row bgWhite">
+      <div class="col-sm-6">
+  
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text ">$</div>
+          </div>
+          <input type="number" [(ngModel)]="finalAmount" #amount class="form-control" id="amount" placeholder="50" value="200">
+          <div class="input-group-append ml-3">
+            <select #frequency class="custom-select" id="selection" required>
+              <option selected disabled hidden value="">Giving frequency</option>
+              <option value="ONE-TIME">ONE-TIME</option>
+              <option value="MONTHLY">MONTHLY</option>
+              <option value="YEARLY">YEARLY</option>
+            </select>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-sm-6">
+        <div class="row d-flex justify-content-center">
+          <button (click)="getValue1(amount.value); getValue2(frequency.value)" type="submit" class="btn btn-outline-warning ml-3 mb-3 text-dark">UPDATE</button>
+        </div>
+  
+      </div>
+      <div class="col-sm-2 d-flex justify-content-center">
+        <strong>
+          Amount $: {{ displayVal1 }}
+        </strong>
+      </div>
+  
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="content">
+              <h6 class="text-muted">
+                Increase your impact
+              </h6>
+              <h5 class="text-white">
+                Donation Fair
+              </h5>
+              <h6 class="text-dark">
+                Sponsoring a child is the most<br>powerful way you can fight poverty.
+              </h6>
+              <img src="https://blog.bonfire.com/wp-content/uploads/2017/12/Fundraising-Sites_Feature.png" height="100">
+        
+        </div>
+      </div>
+      <div class="col-sm-6 bg-dark">
+        <div class="totals">
+          <div class="row">
+            <div class="col-8">
+              Give <strong>
+                {{ displayVal2 }}
+              </strong>
+            </div>
+            <div class="col-4">
+              $ {{ displayVal1 }}
+            </div>
+          </div>
+          <div class="row pt-4 font-weight-bold pb-3">
+            <div class="col-8">
+              TOTAL
+            </div>
+            <div class="col-4">
+              $ {{ displayVal1 }}
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center pt-3">
+            
+            <a href="" (click)="donating()">
+              <div class="btn-lg-lg" id="myPaypalButtons">
+                
+              </div>
+            </a>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
