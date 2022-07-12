@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -14,6 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { CharitiesComponent } from './charities/charities.component';
 import { CharitiesDetailsComponent } from './charities-details/charities-details.component';
+import { DonationsComponent } from './donations/donations.component';
+import { PaymentComponent } from './payment/payment.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { CharitiesDetailsComponent } from './charities-details/charities-details
     FooterComponent,
     AboutComponent,
     CharitiesComponent,
-    CharitiesDetailsComponent
+    CharitiesDetailsComponent,
+    DonationsComponent,
+    PaymentComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { HomeviewComponent } from './homeview/homeview.component';
 import { AboutComponent } from './about/about.component';
 import { CharitiesComponent } from './charities/charities.component';
 import { CharitiesDetailsComponent } from './charities-details/charities-details.component';
+import { DonationsComponent } from './donations/donations.component';
 
 
 
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path:'about', component:AboutComponent },
   { path:'charities', component:CharitiesComponent },
   { path:'charities-details', component:CharitiesDetailsComponent },
+  { path:'donations', component:DonationsComponent },
 
 
 

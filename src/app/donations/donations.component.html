@@ -1,0 +1,20 @@
+<div class="container dnt">
+<form [formGroup]="donationForm" (ngSubmit)="onSubmit()" class="mt-5 text-center">
+<div>
+  <label for="amount">Target Amount: </label>
+  <input id="amount" type="number" formControlName="amount" class="form-control">
+</div> <br>  
+<div>
+
+  <label for="PaymentMethod">Payment Method: </label>
+  <input id="payment" type="text" formControlName="method" class="form-control">
+</div> 
+<br>  
+<div>
+  <label for="Fequency">Frequency: </label>
+  <input id="Frequency" type="text" formControlName="frequency" class="form-control">
+</div>
+
+</form>
+
+</div>

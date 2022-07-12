@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CharitiesService } from '../service/charities.service';
 
+
 @Component({
   selector: 'app-charities',
   templateUrl: './charities.component.html',
@@ -8,11 +9,14 @@ import { CharitiesService } from '../service/charities.service';
 })
 export class CharitiesComponent implements OnInit {
   charities!:any[]
+
   constructor(private charityService:CharitiesService) { }
 
   ngOnInit(): void {
     this.getCharities()
   }
+
+
   getCharities() {
     this.charityService.getCharities().subscribe(
       data=>{
