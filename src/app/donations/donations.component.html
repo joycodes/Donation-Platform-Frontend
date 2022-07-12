@@ -1,20 +1,20 @@
 <div class="container dnt">
-<form [formGroup]="donationForm" (ngSubmit)="onSubmit()" class="mt-5 text-center">
+<form #donationForm="ngForm" (ngSubmit)="onSubmit(donationForm.value)" class="mt-5 text-center">
 <div>
   <label for="amount">Target Amount: </label>
-  <input id="amount" type="number" formControlName="amount" class="form-control">
+  <input id="amount" type="number" name="amount_raised" class="form-control" ngModel placeholder="amount_raised" >
 </div> <br>  
 <div>
 
   <label for="PaymentMethod">Payment Method: </label>
-  <input id="payment" type="text" formControlName="method" class="form-control">
+  <input id="payment" type="text" name="payment_method" class="form-control" ngModel placeholder="payment_method" >
 </div> 
 <br>  
 <div>
   <label for="Fequency">Frequency: </label>
-  <input id="Frequency" type="text" formControlName="frequency" class="form-control">
+  <input id="Frequency" type="text" name="donation_frequency" class="form-control" ngModel placeholder="donation_frequency" >
 </div>
-
+ <button class="btn btn-outline-warning mt-5" type="submit">Donate</button>
 </form>
 
 </div>

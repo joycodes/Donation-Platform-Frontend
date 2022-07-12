@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { DonationsapiservicesService } from '../service/donationsapiservices.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-donations',
@@ -8,12 +8,14 @@ import { DonationsapiservicesService } from '../service/donationsapiservices.ser
   styleUrls: ['./donations.component.css']
 })
 export class DonationsComponent implements OnInit {
-  donationForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-  });
+  // donationForm = new FormGroup({
+  //   firstName: new FormControl(''),
+  //   lastName: new FormControl(''),
+  // });
 
-  constructor() { }
+
+  
+  constructor( private http: HttpClient) { }
 
 
 
@@ -21,8 +23,14 @@ export class DonationsComponent implements OnInit {
     
   }
 
-  onSubmit() {
+  onSubmit(data: any) {
+
+    this.http.post('https://donationappke.herokuapp.com/api/donations/',data)
+    .subscribe((result)=>{
+      console.warn('result', result);
+
+    })
     // TODO: Use EventEmitter with form value
-    console.warn(this.donationForm.value);
+    console.warn(data);
   }
 }
