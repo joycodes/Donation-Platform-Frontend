@@ -26,7 +26,7 @@ Below are the project's links to various resourecs from the Requirements to the 
 ## Project Setup Instructions
 - Open Terminal {Ctrl+Alt+T}     
 - git clone [Donation-Platform-Frontend](https://github.com/joycodes/Donation-Platform-Frontend.git)      
-- cd Donation-Platform      
+- cd Donation-Platform-Frontend    
 - code . or atom . based on the text editor you have.
 
 #### How the project works
