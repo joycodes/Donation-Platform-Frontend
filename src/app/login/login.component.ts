@@ -1,4 +1,3 @@
-
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
@@ -28,7 +27,9 @@ export class LoginComponent implements OnInit {
 
   submit(): void {
     this.http.post('https://donationappke.herokuapp.com/api/login/', this.form.getRawValue(), {
-      withCredentials: true
-    }).subscribe(() => this.router.navigate(['/']));
+    }).subscribe((Response) => {
+      console.log(Response)
+      this.router.navigate(['/'])
+    });
   }
 }

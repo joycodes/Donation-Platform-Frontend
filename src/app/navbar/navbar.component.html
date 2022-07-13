@@ -1,0 +1,76 @@
+
+<header>
+    <div class="header-area ">
+        <div class="header-top_area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-md-12 col-lg-8">
+                        <div class="short_contact_list">
+                            <ul>
+                                <li><a href="#"> <i class="fa fa-phone"></i> +254 714 534407</a></li>
+                                <li><a href="#"> <i class="fa fa-envelope"></i>support@charifit.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-lg-4">
+                        <div class="social_media_links d-none d-lg-block">
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-pinterest-p"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="logo">
+                            <a href="index.html">
+                            <img src="assets/img/logo.png" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="main-menu">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a routerLink="/home" routerLinkActive='active' href="">home</a></li>
+                                    <li><a routerLink="/about" href="">about</a></li>
+                                    <li><a routerLink="/charities" href="">Charities</a></li>
+                                    <li><a routerLink="/#" href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="Appointment">
+                                <!-- <div class="book_btn d-none d-lg-block">
+                                    
+                                    <a data-scroll-nav='1' href="#">Register/Login</a> -->
+                                    <div>
+                                        <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="!authenticated">
+                                            <li class="nav-item">
+                                                <!-- <a routerLink="/login" class="nav-link">Login</a> -->
+                                            </li>
+                                            <li class="nav-item">
+                                                <a routerLink="/register" class="nav-link">Register</a>
+                                            </li>
+                                        </ul>
+                            
+                                        <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="authenticated">
+                                            <li class="nav-item">
+                                                <a routerLink="/login" class="nav-link" (click)="logout()">Logout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        
+<!-- header-end -->
