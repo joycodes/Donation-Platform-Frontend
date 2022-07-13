@@ -1,26 +1,59 @@
-# DonationPlatform
+# Dona
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.        
+<!-- ![donaHomePg1](https://github.com/ShaviyaVictor/dona/blob/shaviya/src/assets/Screenshot-1.png)              
+![donaHomePg2](https://github.com/ShaviyaVictor/dona/blob/shaviya/src/assets/Screenshot-2.png) -->
 
-## Development server
+## Project Description
+This is a Pro-Dev group13 project for Moringa School.         
+The goal is to create a platform that allows users to donate to charity/charities.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<!-- #### Site links
+Below are the project's links to various resourecs from the Requirements to the Deployment link.         
+- To view the [project's Requirements](https://docs.google.com/document/d/1YwuVeIh2TdnHOIOvMpXJ7LETcQG9Z0VVESfeh9quM6M/edit).             
+- To view the [project's Figma Mockup](https://www.figma.com/file/6pW09ap3pxsKcDuoqgPcIZ/Donation-Platform?node-id=15%3A451).              
+- To view the [project's Google Presentation Slides](https://docs.google.com/presentation/d/1GVrFM-uUvDkyYuAWa3hidGeB6kresJ4E7SkKYbWkm6E/edit#slide=id.p).             
+- To view the [project's Live Site](https://shaviyavictor.github.io/dona/).           -->
 
-## Code scaffolding
+#### Authors
+**Joyce Nguttu - Scrum Master**       
+**Joseph Odero**       
+**Teresiah Githua**       
+**Mungai Mbugua**       
+**Carolyne Maunda**       
+<!-- Moringa School Core -> Pro Dev Students. -->
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project Setup Instructions
+- Open Terminal {Ctrl+Alt+T}     
+- git clone [Donation-Platform-Frontend](https://github.com/joycodes/Donation-Platform-Frontend.git)      
+- cd Donation-Platform      
+- code . or atom . based on the text editor you have.
 
-## Build
+#### How the project works
+1. See a variety of charities you can donate to.
+2. Create an account on the platform.
+3. Choose and donate to a charity.
+4. Set up automated repeat donation or one-time donation.
+5. See stories about beneficiaries of your donations.
+6. Donate via paypal/stripe or any other third party service.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Technologies Used
+- HTML - to provide the structure of the web application
+- Bootstrap - help in prestyling the application
+- CSS - help provide custom styles for the web application
+- JavaScript - help achieve functionality of the page
+- Angular - to build a SPA
+- Typescript - to define the logic code
+- Django - for the db
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License and Copyright Information
+The project is [MIT](LICENSE) licensed 
+   
+  
+<!-- * **© Group12**, API generation and consumption group project.        
+    - [LinkedIn](https://www.linkedin.com/in/victor-shaviya-532ab0110/)          
+    - [Instagram](https://www.instagram.com/ignition_reads/) -->
 
 ## Further help
 
