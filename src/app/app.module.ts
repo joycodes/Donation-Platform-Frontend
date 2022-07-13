@@ -21,6 +21,8 @@ import { RegisterComponent } from './register/register.component';
 import { UserRegisterService } from './service/user-register.service';
 import { DonationsapiservicesService } from './service/donationsapiservices.service';
 import { CharitiesService } from './service/charities.service';
+import { DonationsComponent } from './donations/donations.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 
@@ -34,7 +36,9 @@ import { CharitiesService } from './service/charities.service';
     FooterComponent,
     AboutComponent,
     CharitiesComponent,
-    CharitiesDetailsComponent, 
+    CharitiesDetailsComponent,
+    DonationsComponent,
+    PaymentComponent, 
   ],
   
   imports: [
