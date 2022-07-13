@@ -122,9 +122,9 @@ export class PaymentComponent implements OnInit {
       this.charityDisplayed = data
       this.charityDisplayed = this.charityDisplayed.filter((data :any) => data.id == id);
 
-      if(this.charityDisplayed.length <= 0) {
-        this.route.navigateByUrl('');
-      }
+      // if(this.charityDisplayed.length <= 0) {
+      //   this.route.navigateByUrl('');
+      // }
 
       this.charity = this.charityDisplayed[0];
 

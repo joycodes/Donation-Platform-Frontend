@@ -23,13 +23,13 @@ export class DonationsComponent implements OnInit {
 
   }
 
-  onSubmit(data: any) {
+onSubmit(data: any) {
 
     this.http.post('https://donationappke.herokuapp.com/api/donations/',data)
     .subscribe((Response)=>{
 
-      // this.router.navigate(['/payment']);
-      // console.warn(Response);
+      this.router.navigate(['/payment']);
+      console.warn(Response);
   
     })
     
@@ -40,5 +40,9 @@ export class DonationsComponent implements OnInit {
 
 
 
+  
+  }
 
-}
+
+
+

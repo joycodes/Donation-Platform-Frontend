@@ -11,8 +11,8 @@ export class CharitiesDetailsComponent implements OnInit {
   constructor(private router: Router) { }
 
 
-  gotoPayment(){
-    this.router.navigate(['/payment']);  // define your component where you want to go
+  gotoDonations(){
+    this.router.navigate(['/donations']);  // define your component where you want to go
 }
   ngOnInit(): void {
   }
