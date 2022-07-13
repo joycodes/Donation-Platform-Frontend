@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-charities-details',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CharitiesDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
+
+  gotoPayment(){
+    this.router.navigate(['/payment']);  // define your component where you want to go
+}
   ngOnInit(): void {
   }
 
