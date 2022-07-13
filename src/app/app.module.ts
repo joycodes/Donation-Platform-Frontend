@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -21,24 +23,28 @@ import { DonationsapiservicesService } from './service/donationsapiservices.serv
 import { CharitiesService } from './service/charities.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     LoginComponent,
     RegisterComponent,
-    NavbarComponent,
     HomeviewComponent,
     FooterComponent,
     AboutComponent,
     CharitiesComponent,
-    CharitiesDetailsComponent
+    CharitiesDetailsComponent, 
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+
+  
 
   ],
   providers: [

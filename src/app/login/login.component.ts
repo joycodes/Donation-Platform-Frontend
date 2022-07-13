@@ -26,8 +26,10 @@ export class LoginComponent implements OnInit {
   }
 
   submit(): void {
-    this.http.post('http://localhost:8000/api/api/login/', this.form.getRawValue(), {
-      withCredentials: true
-    }).subscribe(() => this.router.navigate(['/']));
+    this.http.post('http://127.0.0.1:8000/api/login/', this.form.getRawValue(), {
+    }).subscribe((Response) => {
+      console.log(Response)
+      this.router.navigate(['/'])
+    });
   }
 }

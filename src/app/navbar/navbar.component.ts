@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavComponent implements OnInit {
+export class NavbarComponent implements OnInit {
   authenticated = false;
 
   constructor(private http: HttpClient) {
@@ -22,7 +22,7 @@ export class NavComponent implements OnInit {
   }
 
   logout(): void {
-    this.http.post('http://localhost:8000/api/logout', {}, {withCredentials: true})
+    this.http.post('http://127.0.0.1:8000/api/logout', {}, {withCredentials: true})
       .subscribe(() => this.authenticated = false);
   }
 
