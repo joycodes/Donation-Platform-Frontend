@@ -5,16 +5,18 @@
             <div *ngFor="let charity of charities" class="col-lg-4 col-md-6">
                 <div class="single_cause">
                     <div class="thumb">
-                        <img src="{{charity.charity_image}}" alt="">
+                        <a [routerLink]="['/donation/']">
+                        <img src="https://res.cloudinary.com/dbq3a2gb7{{charity.charity_image}}" alt="">
+                    </a>
                     </div>
                     <div class="causes_content">
                         <div class="custom_progress_bar">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                <!-- <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                                     <span class="progres_count">
                                         30%
                                     </span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="balance d-flex justify-content-between align-items-center">
@@ -24,9 +26,7 @@
                         <a routerLink="/charities-details" href=""><h4> {{charity.name}}</h4></a>
 
                         <!-- <a href="cause_details.html"><h4>Help us to Send Food</h4></a> -->
-                        <p>The passage is attributed to an 
-                            unknown typesetter in the century 
-                            who is thought</p>
+                        <p>By feeding 2000 hungry children, we will encourage them to stay in school and focus on their studies</p>
                             <a routerLink="/charities-details" href="">Read More</a>
                     </div>
                 </div>
