@@ -1,4 +1,4 @@
-# Dona
+# Fund Fair
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.        
 <!-- ![donaHomePg1](https://github.com/ShaviyaVictor/dona/blob/shaviya/src/assets/Screenshot-1.png)              
@@ -16,7 +16,7 @@ Below are the project's links to various resourecs from the Requirements to the 
 - To view the [project's Live Site](https://shaviyavictor.github.io/dona/).           -->
 
 #### Authors
-**Joyce Nguttu - Scrum Master**       
+**Joyce Nguttu**       
 **Joseph Odero**       
 **Teresiah Githua**       
 **Mungai Mbugua**       
