@@ -1,12 +1,13 @@
 <div class="container dnt">
+  <h3 class="text-center text-dark">Make Donations</h3>
   <form #donationForm="ngForm" (ngSubmit)="onSubmit(donationForm.value)" class="mt-5 text-center">
-  <div>
-    <input id="amount" type="number" name="amount_raised" class="form-control" ngModel placeholder="amount_raised" >
+  <div class="mb-3">
+    <input id="amount" type="number" name="amount_raised" class="form-control" ngModel placeholder="target_amount" >
   </div> 
    
   
-  <select #frequency class="custom-select" id="selection" name="payment_method" class="form-control" ngModel placeholder="payment_method">
-    <option selected disabled hidden value=""> Payment Method</option>
+  <select #frequency class="custom-select mb-3" id="selection" name="payment_method" class="form-control" ngModel placeholder="payment_method">
+    <option selected disabled hidden value="" placeholder=""> Payment Method</option>
     <option value="PAY-PAL">PAY-PAL</option>
   </select>
   
@@ -25,7 +26,7 @@
     </select>
    -->
   
-   <button class="btn btn-outline-warning mt-5 mr-5" type="submit" routerLink="/payment" >Submit</button> 
+   <button class="btn btn-outline-warning mt-5 " type="submit" routerLink="/payment" >Submit</button> 
   
   
   </form>

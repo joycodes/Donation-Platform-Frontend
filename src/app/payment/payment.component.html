@@ -1,9 +1,9 @@
-<div class="container h01">
+<div class="container h01 ">
     <h5 class="pb-4 text-center give">
       Donate to {{ charity?.charity.user_name }}
     </h5>
   <hr>
-    <div class="row bgWhite">
+    <div class="row bgWhite mt-5">
       <div class="col-sm-6">
   
         <div class="input-group mb-2 mr-sm-2">
@@ -22,9 +22,9 @@
         </div>
         
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
         <div class="row d-flex justify-content-center">
-          <button (click)="getValue1(amount.value); getValue2(frequency.value)" type="submit" class="btn btn-outline-warning ml-3 mb-3 text-dark">UPDATE</button>
+          <button (click)="getValue1(amount.value); getValue2(frequency.value)" type="submit" class="btn btn-warning text-dark">UPDATE</button>
         </div>
   
       </div>
@@ -39,7 +39,7 @@
   
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-md-6">
         <div class="content">
               <h6 class="text-muted">
                 Increase your impact
@@ -48,16 +48,16 @@
                 Donation Fair
               </h5>
               <h6 class="text-dark">
-                Sponsoring a child is the most<br>powerful way you can fight poverty.
+                Spare a few $ <br>Build many.
               </h6>
               <img src="https://blog.bonfire.com/wp-content/uploads/2017/12/Fundraising-Sites_Feature.png" height="100">
         
         </div>
       </div>
-      <div class="col-sm-6 bg-dark">
+      <div class="col-sm-6 bg-info mt-5">
         <div class="totals">
           <div class="row">
-            <div class="col-8 text-light">
+            <div class="col-4 text-light">
               Give <strong>
                 {{ displayVal2 }}
               </strong>
@@ -67,7 +67,7 @@
             </div>
           </div>
           <div class="row pt-4 font-weight-bold pb-3">
-            <div class="col- text-light">
+            <div class="col-4 text-light">
               TOTAL
             </div>
             <div class="col-4 text-light">
