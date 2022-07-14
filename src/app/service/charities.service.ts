@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BASEURL } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -11,7 +10,7 @@ export class CharitiesService {
   constructor(private _http:HttpClient) { }
 
   getCharities() :Observable<any> {
-    return this._http.get<any>(`${BASEURL}/charities`)
+    return this._http.get<any>("https://donationappke.herokuapp.com/api/charities")
 
   }
 }
