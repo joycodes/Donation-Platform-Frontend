@@ -16,7 +16,7 @@ Below are the project's links to various resourecs from the Requirements to the 
 - To view the [project's Live Site](https://shaviyavictor.github.io/dona/).           -->
 
 #### Authors
-**Joyce Nguttu - Scrum Master**       
+**Joyce Nguttu**       
 **Joseph Odero**       
 **Teresiah Githua**       
 **Mungai Mbugua**       
