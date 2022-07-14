@@ -28,7 +28,7 @@ onSubmit(data: any) {
     this.http.post('https://donationappke.herokuapp.com/api/donations/',data)
     .subscribe((Response)=>{
 
-      this.router.navigate(['/payment']);
+      // this.router.navigate(['/payment']);
       console.warn(Response);
   
     })
