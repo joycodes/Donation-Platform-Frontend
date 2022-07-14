@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
   }
 
   logout(): void {
-    this.http.post('http://127.0.0.1:8000/api/logout', {}, {withCredentials: true})
+    this.http.post('https://donationappke.herokuapp.com/api/logout', {}, {withCredentials: true})
       .subscribe(() => this.authenticated = false);
   }
 

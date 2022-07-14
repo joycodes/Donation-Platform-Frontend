@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homeview.component.css']
 })
 export class HomeviewComponent implements OnInit {
-
+  message = '';
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+

@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   }
 
   submit(): void {
-    this.http.post('http://127.0.0.1:8000/api/login/', this.form.getRawValue(), {
+    this.http.post('https://donationappke.herokuapp.com/api/login/', this.form.getRawValue(), {
     }).subscribe((Response) => {
       console.log(Response)
       this.router.navigate(['/'])
